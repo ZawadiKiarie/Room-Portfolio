@@ -165,10 +165,18 @@
   color: white;
 }
 
+.btn.solid:hover {
+  opacity: 0.8;
+}
+
 .btn.ghost {
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #222;
   background: transparent;
+}
+
+.btn.ghost:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* Small screens: make image a bit shorter */
@@ -358,7 +366,7 @@ textarea:focus {
 
 .about-description {
   font-size: 1.5rem;
-  font-family: "Shifty Notes";
+  font-family: "Shifty Notes" Inter, system-ui, "Open Sans", sans-serif;
 }
 
 .tech-container {
