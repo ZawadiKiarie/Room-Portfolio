@@ -313,6 +313,7 @@ export function PlainModel(props) {
   }, []);
 
   const playHoverAnimation = (obj, hover) => {
+    if (!introDone.current) return;
     const init = obj.userData.__init;
     if (!init) return;
 

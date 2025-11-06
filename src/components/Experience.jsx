@@ -1,22 +1,16 @@
-import {
-  Backdrop,
-  Environment,
-  OrbitControls,
-  PerspectiveCamera,
-  Sky,
-} from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { useEffect, useRef } from "react";
 import { useAtomValue } from "jotai";
 import { openModalAtom } from "../utilities/utilities";
 import * as THREE from "three";
 import { useFrame } from "@react-three/fiber";
 import { useMobile } from "../hooks/useMobile";
-import { PlainModel } from "./RoomPortfolioPlain10";
+import { TextureModel3 } from "./RoomPortfolioWTexture3";
 
 export const Experience = () => {
   const controls = useRef();
   const openModal = useAtomValue(openModalAtom);
-  const lightRef = useRef();
+  // const lightRef = useRef();
   const camera = useRef();
   const { isMobile } = useMobile();
 
@@ -73,7 +67,7 @@ export const Experience = () => {
         fov={25}
         zoom={1}
       />
-      <ambientLight intensity={0.4} />
+      {/* <ambientLight intensity={0.4} />
       <directionalLight
         ref={lightRef}
         castShadow
@@ -89,11 +83,11 @@ export const Experience = () => {
         shadow-camera-bottom={-6}
         shadow-bias={-0.0001}
         shadow-normalBias={0.02}
-      />
-      <Environment
+      /> */}
+      {/* <Environment
         files={"hdr/kloppenheim_07_puresky_2k.hdr"}
         backgroundRotation={[0, -Math.PI / 2, 0]}
-      />
+      /> */}
       <OrbitControls
         ref={controls}
         enableDamping={true}
@@ -107,7 +101,8 @@ export const Experience = () => {
         maxDistance={45}
         enablePan
       />
-      <PlainModel scale={isMobile ? 0.7 : 1} position={[1, -4, 1]} />
+      {/* <PlainModel scale={isMobile ? 0.7 : 1} position={[1, -4, 1]} /> */}
+      <TextureModel3 scale={isMobile ? 0.7 : 1} position={[1, -4, 1]} />
     </>
   );
 };
