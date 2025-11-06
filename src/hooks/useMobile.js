@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const MOBILE_THRESHOLD = 768;
+const MOBILE_THRESHOLD = 1065;
 
 export const useMobile = () => {
   const [isMobile, setIsMobile] = useState(
