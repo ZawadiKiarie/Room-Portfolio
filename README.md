@@ -1,6 +1,6 @@
 # Room Portfolio
 
-![Portfolio picture](public/images/PortfolioPic.png)
+![Portfolio picture](public/images/PortfolioPic2.png)
 
 Room Portfolio made with love ❤️
 It showcases my work, about me and contact details.

@@ -5,7 +5,7 @@ export const config = {
       description:
         "The site you're on right now! A room portfolio built entirely in blender that also showcases stuff about me",
       technologies: ["React", "R3F", "Threejs", "blender"],
-      image: "images/roomportfolio.png",
+      image: "images/PortfolioPic2.png",
     },
     {
       title: "3D Portfolio",
