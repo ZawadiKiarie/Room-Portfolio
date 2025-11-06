@@ -97,8 +97,8 @@ export const Experience = () => {
         maxPolarAngle={THREE.MathUtils.degToRad(73)}
         minAzimuthAngle={-Math.PI}
         maxAzimuthAngle={-Math.PI / 2}
-        minDistance={5}
-        maxDistance={45}
+        minDistance={10}
+        maxDistance={isMobile ? 45 : 30}
         enablePan
       />
       {/* <PlainModel scale={isMobile ? 0.7 : 1} position={[1, -4, 1]} /> */}
