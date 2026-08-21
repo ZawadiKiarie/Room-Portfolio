@@ -67,27 +67,6 @@ export const Experience = () => {
         fov={25}
         zoom={1}
       />
-      {/* <ambientLight intensity={0.4} />
-      <directionalLight
-        ref={lightRef}
-        castShadow
-        intensity={0.4}
-        // position={[position.x, position.y, position.z]}
-        position={[-3.23, 8.35, 1.77]}
-        shadow-mapSize={[4096, 4096]}
-        shadow-camera-near={0.5}
-        shadow-camera-far={20}
-        shadow-camera-left={-6}
-        shadow-camera-right={6}
-        shadow-camera-top={6}
-        shadow-camera-bottom={-6}
-        shadow-bias={-0.0001}
-        shadow-normalBias={0.02}
-      /> */}
-      {/* <Environment
-        files={"hdr/kloppenheim_07_puresky_2k.hdr"}
-        backgroundRotation={[0, -Math.PI / 2, 0]}
-      /> */}
       <OrbitControls
         ref={controls}
         enableDamping={true}

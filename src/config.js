@@ -1,11 +1,30 @@
 export const config = {
   work: [
     {
-      title: "Room Portfolio",
+      title: "ParaSight AI",
       description:
-        "The site you're on right now! A room portfolio built entirely in blender that also showcases stuff about me",
-      technologies: ["React", "R3F", "Threejs", "blender"],
-      image: "images/PortfolioPic2.png",
+        "An AI-assisted parasite detection platform that combines automated microscopy analysis with interactive 3D visualization for parasite identification and learning.",
+      technologies: [
+        "React",
+        "R3F",
+        "Threejs",
+        "blender",
+        "Express.js",
+        "PostgreSQL",
+        "YOLO",
+      ],
+      image: "/images/ParaSightAI.png",
+      live: "https://parasightai3d.onrender.com/",
+      github: "https://github.com/ZawadiKiarie/ParaSightAI3D",
+    },
+    {
+      title: "Desk Portfolio",
+      description:
+        "My cozy desk portfolio! Feel the warmth and cozyness whilst exploring my skills and projects",
+      live: "https://desk-portfolio-gamma.vercel.app/",
+      github: "https://github.com/ZawadiKiarie/desk_portfolio",
+      technologies: ["React", "R3F", "Threejs", "CSS"],
+      image: "/images/deskportfolio.png",
     },
     {
       title: "3D Portfolio",
@@ -34,11 +53,18 @@ export const config = {
       technologies: ["React", "expressjs", "Postgres", "Docker"],
       image: "images/smartfood.png",
     },
+    {
+      title: "Room Portfolio",
+      description:
+        "The site you're on right now! A room portfolio built entirely in blender that also showcases stuff about me",
+      technologies: ["React", "R3F", "Threejs", "blender"],
+      image: "images/PortfolioPic2.png",
+    },
   ],
   about: {
     title: "About me",
     description:
-      "Hi! My name is Zawadi kiarie. I am a computer science student at JKUAT. i am interested in becoming a creative developer. I love creating fun and creative experiences for people on the web. My skills as of now are full stack web development with React, Three.js and Blender. I love creating aesthetic things overall and during my free time i love designing posters.",
+      "Hi! My name is Zawadi kiarie. I am a creative 3D Web developer. I love creating fun and creative experiences for people on the web. My skills as of now are full stack web development with React, Three.js and Blender. I love creating aesthetic things overall and during my free time i love designing posters.",
   },
   contact: {
     name: "Zawadi Kiarie",

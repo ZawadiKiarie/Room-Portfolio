@@ -193,7 +193,7 @@ export function TextureModel3(props) {
 
   const envMap = useCubeTexture(
     ["px.webp", "nx.webp", "py.webp", "ny.webp", "pz.webp", "nz.webp"],
-    { path: "/textures/skybox/" }
+    { path: "/textures/skybox/" },
   );
   const videoTexture = useVideoTexture("textures/videos/cat.mp4", {
     start: true,
@@ -281,81 +281,8 @@ export function TextureModel3(props) {
           rot: child.rotation.clone(),
         };
       }
-
-      // if (child.name.includes("Hanging_Plank1")) {
-      //   child.scale.set(0, 1, 0);
-      // } else if (child.name.includes("Hanging_Plank2")) {
-      //   child.scale.set(0, 0, 0);
-      // } else if (child.name.includes("My_Work_Button")) {
-      //   child.scale.set(0, 0, 0);
-      // } else if (child.name.includes("About_Button")) {
-      //   child.scale.set(0, 0, 0);
-      // } else if (child.name.includes("Contact_Button")) {
-      //   child.scale.set(0, 0, 0);
-      // } else if (child.name.includes("LinkedIn")) {
-      //   child.scale.set(0, 0, 0);
-      // } else if (child.name.includes("GitHub")) {
-      //   child.scale.set(0, 0, 0);
-      // } else if (child.name.includes("Plushie")) {
-      //   child.scale.set(0, 0, 0);
-      // }
     });
   }, [envMap, videoTexture]);
-
-  // const introDone = useRef(false);
-
-  // const snapshotInitFromCurrent = () => {
-  //   if (!group.current) return;
-  //   group.current.traverse((child) => {
-  //     if (child.name?.includes("_hover")) {
-  //       child.userData.__init = {
-  //         scale: child.scale.clone(),
-  //         pos: child.position.clone(),
-  //         rot: child.rotation.clone(),
-  //       };
-  //     }
-  //   });
-  // };
-
-  // const playIntroAnimation = () => {
-  //   const t1 = gsap.timeline({
-  //     defaults: { duration: 0.8, ease: "back.out(1.8)" },
-  //     onComplete: () => {
-  //       snapshotInitFromCurrent();
-  //       introDone.current = true;
-  //     },
-  //   });
-
-  //   t1.to(plank1.current.scale, { x: 1, y: 1, z: 1 })
-  //     .to(plank2.current.scale, { x: 1, y: 1, z: 1 }, "-=0.5")
-  //     .to(workButton.current.scale, { x: 1, y: 1, z: 1 }, "-=0.6")
-  //     .to(aboutButton.current.scale, { x: 1, y: 1, z: 1 }, "-=0.6")
-  //     .to(contactButton.current.scale, { x: 1, y: 1, z: 1 }, "-=0.5");
-
-  //   const t2 = gsap.timeline({
-  //     defaults: { duration: 0.8, ease: "back.out(1.8)" },
-  //     onComplete: () => {
-  //       introDone.current = true;
-  //     },
-  //   });
-  //   t2.timeScale(0.8);
-
-  //   t2.to(plushie.current.scale, { x: 1, y: 1, z: 1 }, "+=0.5")
-  //     .to(github.current.scale, { x: 1, y: 1, z: 1 }, "-=0.5")
-  //     .to(linkedin.current.scale, { x: 1, y: 1, z: 1 }, "-=0.6");
-  // };
-
-  // useEffect(() => {
-  //   if (introDone.current) return;
-  //   if (isLoadingComplete) playIntroAnimation();
-  // }, [isLoadingComplete]);
-
-  // useEffect(() => {
-  //   popRef.current = new Howl({
-  //     src: ["music/bubble3.mp3"],
-  //     volume: 0.4,
-  //   });
-  // }, []);
 
   const playHoverAnimation = (obj, hover) => {
     const init = obj.userData.__init;
@@ -1360,9 +1287,9 @@ useTexture.preload(
     "TexturePackThree.webp",
     "TexturePackFour.webp",
   ],
-  { path: "/textures/room/" }
+  { path: "/textures/room/" },
 );
 useCubeTexture.preload(
   ["px.webp", "nx.webp", "py.webp", "ny.webp", "pz.webp", "nz.webp"],
-  { path: "/textures/skybox/" }
+  { path: "/textures/skybox/" },
 );

@@ -29,7 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Motley Forces", Inter, system-ui, "Open Sans", sans-serif;
+  font-family: "Motley Forces", Inter, system-ui, Inter, "Open Sans", sans-serif;
 }
 
 .experience {
